@@ -1,0 +1,52 @@
+/* Products.css */
+
+.product-container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-image{
+  width: 100%;
+  max-width: 600px;        /* Scales image within layout */
+  aspect-ratio: 4 / 3;      /* Maintains a consistent shape */
+  object-fit: cover;        /* Ensures image fills container neatly */
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.product-image img {
+  width: 135%; /* Set desired width */
+  height: 600px; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures it fits nicely */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+
+.product-image img:hover {
+  transform: scale(1.02); /* Subtle zoom for interactivity */
+}
+
+.product-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.product-content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
